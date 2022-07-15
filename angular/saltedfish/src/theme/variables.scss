@@ -1,0 +1,118 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+/** Ionic CSS Variables **/
+:root {
+  /** primary **/
+  --ion-color-primary: hsl(179, 66%, 46%);
+  --ion-color-primary-rgb: 56, 128, 255;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: hsl(179, 66%, 41%);
+  --ion-color-primary-tint: hsl(179, 66%, 51%);
+
+  /** secondary **/
+  --ion-color-secondary: hsl(155, 64%, 68%);
+  --ion-color-secondary-rgb: 12, 209, 232;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: hsl(155, 64%, 63%);
+  --ion-color-secondary-tint: hsl(155, 64%, 73%);
+
+  /** tertiary **/
+  --ion-color-tertiary: #7044ff;
+  --ion-color-tertiary-rgb: 112, 68, 255;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+  --ion-color-tertiary-shade: #633ce0;
+  --ion-color-tertiary-tint: #7e57ff;
+
+  /** success **/
+  --ion-color-success: hsl(155, 64%, 68%);
+  --ion-color-success-rgb: 16, 220, 96;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: hsl(155, 64%, 63%);
+  --ion-color-success-tint: hsl(155, 64%, 73%);
+
+  /** warning **/
+  --ion-color-warning: hsl(45, 100%, 55%);
+  --ion-color-warning-rgb: 255, 206, 0;
+  --ion-color-warning-contrast: #ffffff;
+  --ion-color-warning-contrast-rgb: 255, 255, 255;
+  --ion-color-warning-shade: hsl(45, 100%, 50%);
+  --ion-color-warning-tint: hsl(45, 100%, 60%);
+
+  /** danger **/
+  --ion-color-danger: hsl(348, 100%, 70%);
+  --ion-color-danger-rgb: 245, 61, 61;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: hsl(348, 100%, 65%);
+  --ion-color-danger-tint: hsl(348, 97%, 75%);
+
+  /** dark **/
+  --ion-color-dark: #222428;
+  --ion-color-dark-rgb: 34, 34, 34;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-shade: #1e2023;
+  --ion-color-dark-tint: #383a3e;
+
+  /** medium **/
+  --ion-color-medium: #989aa2;
+  --ion-color-medium-rgb: 152, 154, 162;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #86888f;
+  --ion-color-medium-tint: #a2a4ab;
+
+  /** light **/
+  --ion-color-light: #f4f5f8;
+  --ion-color-light-rgb: 244, 244, 244;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0, 0, 0;
+  --ion-color-light-shade: #d7d8da;
+  --ion-color-light-tint: #f5f6f9;
+
+  --ion-border-color: #e1e1e1;
+  --ion-item-border-color: #d1d1d1;
+
+  // ==========================================================================
+  // 设计规范相关变量定义
+  // ==========================================================================
+
+  // 主色
+  --color-blue: var(--ion-color-primary);
+  --color-green: var(--ion-color-success);
+  --color-red: var(--ion-color-danger);
+
+  // 文字主色，用于所有主要文字
+  --color-text: #333333;
+  // 文字辅色，用于所有次要文字
+  --color-subtext: #999999;
+  // 页面背景色
+  --color-background: var(--ion-background-color);
+
+  --font-48: 6.67vw;
+  --font-36: 5vw;
+  --font-32: 4.27vw;
+  --font-26: 3.73vw;
+  --font-24: 3.2vw;
+  --font-22: 2.93vw;
+
+  // 页面边距、模块间距，此处用px
+  --layout-spacing: 15px;
+
+  // 商品卡片间距，此处用px
+  --layout-spacing-card: 10px;
+
+  // 底部栏高度
+  --layout-bottom-bar: 13.89vw;
+
+  // 统一圆角，此处用px
+  --general-border-radius: 8px;
+
+  // 跨平台的顶部padding，用于实现双平台沉浸式状态栏
+  --multi-plt-safe-area-top: var(--ion-safe-area-top);
+}

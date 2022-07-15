@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Children</title>
+    <style>
+      body,
+      html {
+        padding: 0;
+        margin: 0;
+      }
+      .sub-page-wrap {
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .abc-box {
+        width: 100px;
+        height: 100px;
+        background-color: #eee;
+        margin-top: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sub-page-wrap">
+      <div>子页面内容</div>
+      <button onclick="getParentFun()" style="margin-top: 20px;">调用父页面方法</button>
+      <div class="abc-box">abc</div>
+    </div>
+    <script>
+      function isChildren() {
+        console.log('这里是子页面')
+      }
+      function getParentFun() {
+        console.log('调父页面方法')
+        var mainPageFun = parent
+        // 调方法
+        mainPageFun.isParent()
+        // 调样式
+        var mainPageDoc = window.parent.document
+        console.log('父页面样式获取--父页面高度', mainPageDoc.body.clientHeight)
+        console.log('父页面样式获取--父页面指定元素高度', mainPageDoc.querySelector('.header-wrap').clientHeight)
+      }
+    </script>
+  </body>
+</html>

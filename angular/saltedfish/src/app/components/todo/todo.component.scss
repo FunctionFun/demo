@@ -1,0 +1,23 @@
+.todo-item {
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  &:last-of-type {
+    --border-color: transparent;
+  }
+}
+
+.todo-wrap {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+.todo-title {
+  position: relative;
+}
+
+.todo-add {
+  position: absolute;
+  top: 4vw;
+  right: 4vw;
+  font-size: 6.8vw;
+}

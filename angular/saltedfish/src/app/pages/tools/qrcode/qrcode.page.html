@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>生成二维码</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div class="qrcode-wrap">
+  <form action="#" class="qrcode-form" (submit)="submitContent($event)">
+    <ion-input type="text" [ngModelOptions]="{standalone: true}" [(ngModel)]="content" clearInput placeholder="请输入内容" ></ion-input>
+  </form>
+  <div class="qrcode-img">
+    <qrcode *ngIf="showQrCode" [qrdata]="content" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+  </div>
+  <div class="qrcode-btn" *ngIf="!showQrCode" (click)="generateQrCode()">生成二维码</div>
+  <div class="qrcode-btn save-btn" *ngIf="showQrCode" (click)="saveQrCode()">保存到相册</div>
+</div>
+</ion-content>

@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <div class="scan-btn" (click)="goToScan()">
+        <ion-icon name="scan-outline"></ion-icon>
+      </div>
+    </ion-buttons>
+    <ion-title>
+      SaltedFish
+    </ion-title>
+    <ion-buttons slot="end">
+      <div class="search-btn" (click)="goToFind()">
+        <ion-icon name="search-outline"></ion-icon>
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="index-wrap">
+    <so-clock></so-clock>
+    <so-todo></so-todo>
+  </div>
+</ion-content>

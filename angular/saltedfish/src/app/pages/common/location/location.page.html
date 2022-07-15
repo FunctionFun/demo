@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot='start'>
+      <ion-back-button text="" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>选择省份</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="select-city-wrap">
+    <so-item *ngFor="let province of provinceList" (click)="chooseItem(province)">
+      {{ province.name }}
+    </so-item>
+  </div>
+</ion-content>

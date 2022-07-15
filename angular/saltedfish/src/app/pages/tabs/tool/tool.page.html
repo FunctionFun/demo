@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tool
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content">
+  <div class="tool-list">
+    <div class="tool-category" *ngFor="let item of tools">
+      <div class="tool-category-name">{{ item.name }}</div>
+      <div class="tool-category-content">
+        <div class="tool-item" *ngFor="let item2 of item.list" (click)="goToDetail(item2)">{{ item2.name }}</div>
+      </div>
+    </div>
+  </div>
+</ion-content>

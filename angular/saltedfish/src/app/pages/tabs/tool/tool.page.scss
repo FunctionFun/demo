@@ -1,0 +1,38 @@
+.content {
+  --background: #f9f9f9;
+}
+
+.tool-list {
+  padding: var(--layout-spacing);
+}
+
+.tool-category {
+  margin-bottom: 5vw;
+}
+
+.tool-category-name {
+  font-size: var(--font-26);
+  margin-bottom: 3vw;
+}
+
+.tool-category-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tool-item {
+  min-width: 20vw;
+  height: 9vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--general-border-radius);
+  border: 1px solid var(--ion-border-color);
+  background: #ffffff;
+  text-align: center;
+  padding: 0 3vw;
+  color: #666666;
+  font-size: var(--font-24);
+  margin-bottom: 3vw;
+  margin-right: 3vw;
+}

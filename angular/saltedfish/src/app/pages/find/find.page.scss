@@ -1,0 +1,51 @@
+@import '../../../theme/mixin.scss';
+
+.content {
+  --background: #f9f9f9;
+}
+
+ion-header ion-toolbar:last-child {
+  --border-width: 0;
+}
+
+.find-search {
+  padding: var(--layout-spacing);
+  border-bottom: 0.55px solid var(--ion-border-color);
+  background: #fff;
+  ion-input {
+    background: var(--ion-color-light-tint);
+    height: 9vw;
+    line-height: 9vw;
+    border-radius: 4.5vw;
+    --padding-start: 10px;
+    font-size: var(--font-26);
+    box-shadow: 0 0 3px rgba($color: #000000, $alpha: 0.08) inset;
+  }
+}
+
+.find-site {
+  padding: var(--layout-spacing);
+  .find-site-category {
+    margin-bottom: var(--layout-spacing);
+    padding-bottom: var(--layout-spacing);
+    @include thin-border(bottom, #f1f1f1);
+  }
+  .find-site-label {
+    display: block;
+    font-size: var(--font-32);
+    margin-bottom: 3vw;
+    color: var(--color-blue);
+    font-weight: 600;
+  }
+  .find-site-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .find-site-item {
+    font-size: var(--font-26);
+    margin-right: 4vw;
+    margin-bottom: 2vw;
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      发现
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content">
+  <div class="find-wrap">
+    <div class="find-search">
+      <form action="#" class="search-form" (submit)="submitSearch($event)">
+        <ion-input type="search" [ngModelOptions]="{standalone: true}" [(ngModel)]="searchKey" clearInput placeholder="搜一下" ></ion-input>
+      </form>
+    </div>
+    <div class="find-site">
+      <div class="find-site-category" *ngFor="let item of sites">
+        <div class="find-site-label">{{ item.category }}</div>
+        <div class="find-site-list">
+          <div class="find-site-item" (click)="goToSite(site)" *ngFor="let site of item.list">{{ site.title }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

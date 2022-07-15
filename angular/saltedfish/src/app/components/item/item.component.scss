@@ -1,0 +1,40 @@
+@import "../../../theme/mixin.scss";
+
+.item-wrap {
+  padding-left: var(--layout-spacing);
+  .item-box {
+    display: flex;
+    align-items: center;
+    padding-right: var(--layout-spacing);
+    @include thin-border('bottom', var(--ion-item-border-color));
+    height: var(--height, 11.6vw);
+  }
+  .item-content {
+    flex: 1;
+    font-size: var(--font-26);
+    color: var(--color, #666666);
+  }
+  .item-start,
+  .item-end {
+    flex: 0;
+    display: flex;
+    align-items: center;
+  }
+  .item-start {
+    margin-right: 2.4vw;
+    ion-icon {
+      width: 9vw;
+      height: 9vw;
+      color: var(--color, #666666);
+    }
+  }
+  .item-end {
+    color: var(--color-subtext);
+    font-size: var(--font-24);
+    ion-icon {
+      width: 4.8vw;
+      height: 4.8vw;
+      margin-left: 2.4vw;
+    }
+  }
+}

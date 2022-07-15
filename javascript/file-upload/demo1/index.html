@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demo1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-clip: padding-box;
+      }
+      button {
+        padding: 8px 20px;
+        border: none;
+        background: #eeeeee;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        outline: none;
+      }
+      button:hover {
+        background: #e2e2e2;
+      }
+      .button-group-title {
+        margin-bottom: 10px;
+      }
+      .button-group-box {
+        margin-bottom: 20px;
+      }
+      h2 {
+        margin-bottom: 40px;
+      }
+      .content {
+        padding: 20px;
+      }
+    </style>
+    <link rel="stylesheet" href="dragImg.css">
+  </head>
+  <body>
+    <div class="content">
+
+      <h2>移动端图片上传</h2>
+
+      <div class="button-group-wrap">
+        <div class="button-group-title">单个图片提交</div>
+        <div class="button-group-box">
+          <input accept="image/*" id="inp1" type="file">
+        </div>
+      </div>
+
+      <div class="button-group-wrap">
+        <div class="button-group-title">多个图片提交</div>
+        <div class="button-group-box">
+          <input accept="image/*" id="inp2" multiple type="file">
+        </div>
+      </div>
+
+      <div class="button-group-wrap">
+        <div class="button-group-title">打开前置摄像头</div>
+        <div class="button-group-box">
+          <input accept="image/*" id="inp3" capture='user' type="file">
+        </div>
+      </div>
+
+      <div class="button-group-wrap">
+        <div class="button-group-title">打开后置摄像头</div>
+        <div class="button-group-box">
+          <input accept="image/*" id="inp4" capture='environment' type="file">
+        </div>
+      </div>
+
+      <div class="button-group-wrap">
+        <div class="button-group-title">拖拽上传/本地预览</div>
+        <div class="button-group-box">
+          <div class="drag-image-wrap">
+            <div class="drag-image-upload" id="upload">请将文件拖拽到这里</div>
+            <ul class="drag-image-preview" id="preview"></ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="dragImg.js"></script>
+  </body>
+</html>

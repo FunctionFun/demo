@@ -1,0 +1,15 @@
+.webview-wrap {
+  height: 100%;
+}
+
+.iframe-wrap {
+  width: 100%;
+  min-height: 100%;
+  border: none;
+  -webkit-overflow-scrolling: touch !important;
+  overflow-x: hidden;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
+}

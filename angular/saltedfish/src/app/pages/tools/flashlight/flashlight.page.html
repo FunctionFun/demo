@@ -1,0 +1,16 @@
+<ion-header no-border class="header-transparent">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <div class="flashlight-wrap">
+    <div class="flashlight-box" (click)="toggleSwitch()" [ngClass]="{'is-light': isLight }">
+      {{ isLight ? 'ON' : 'OFF' }}
+    </div>
+  </div>
+</ion-content>

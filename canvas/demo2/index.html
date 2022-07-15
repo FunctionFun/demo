@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demo2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-clip: padding-box;
+      }
+      body {
+        padding: 20px;
+      }
+      .canvas-wrap {
+        position: sticky;
+        top: 20px;
+        left: 20px;
+        margin-bottom: 20px;
+      }
+      .canvas-wrap canvas {
+        background: #f9f9f9;
+      }
+      button {
+        padding: 4px 10px;
+        border: none;
+        background: #eeeeee;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        outline: none;
+      }
+      button:hover {
+        background: #e2e2e2;
+      }
+      .button-group-title {
+        margin-bottom: 10px;
+      }
+      .button-group-box {
+        margin-bottom: 20px;
+      }
+      #svg1,
+      #canvas2 {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="canvas-wrap">
+      <canvas id="canvas" width="300px" height="300px"></canvas>
+      <canvas id="canvas2" width="300px" height="300px"></canvas>
+      <svg id="svg1"></svg>
+    </div>
+
+    <div class="button-group-wrap">
+      <div class="button-group-title">矩形</div>
+      <div class="button-group-box">
+        <button onclick="drawRectangle()">实心矩形</button>
+        <button onclick="drawRectangle2()">空心矩形</button>
+      </div>
+    </div>
+
+    <div class="button-group-wrap">
+      <div class="button-group-title">线条</div>
+      <div class="button-group-box">
+        <button onclick="drawLine()">不同端点样式的直线</button>
+        <button onclick="drawLine2()">不同间距的虚线</button>
+        <button onclick="drawLine3()">不同拐角样式的折线</button>
+      </div>
+    </div>
+
+    <div class="button-group-wrap">
+      <div class="button-group-title">文本</div>
+      <div class="button-group-box">
+        <button onclick="drawText()">不同字体样式的文本</button>
+        <button onclick="drawTextAlign()">不同对齐的文本</button>
+        <button onclick="drawTextBtn()">适应文本宽度的按钮</button>
+      </div>
+    </div>
+
+    <div class="button-group-wrap">
+      <div class="button-group-title">圆和弧</div>
+      <div class="button-group-box">
+        <button onclick="drawCircle()">不同的圆和弧</button>
+        <button onclick="drawArc()">360°起始角度分解</button>
+        <button onclick="drawMoon()">月相变化</button>
+      </div>
+    </div>
+
+    <div class="button-group-wrap">
+      <div class="button-group-title">贝塞尔曲线</div>
+      <div class="button-group-box">
+        <button onclick="drawBezier2()">2次贝赛尔曲线</button>
+        <button onclick="drawBezier3()">3次贝赛尔曲线</button>
+      </div>
+    </div>
+
+    <div class="button-group-wrap">
+      <div class="button-group-title">绘制路径</div>
+      <div class="button-group-box">
+        <button onclick="drawFocus()">给指定元素绘制焦点</button>
+        <button onclick="drawFillRule()">非零环绕填充规则</button>
+        <button onclick="drawFillRule2()">奇偶环绕填充规则</button>
+        <button onclick="drawClip()">剪切路径</button>
+        <button onclick="drawClip2()">剪切路径2</button>
+        <button onclick="checkPoint()">检测点的位置</button>
+      </div>
+    </div>
+
+    <div class="button-group-wrap">
+      <div class="button-group-title">变换</div>
+      <div class="button-group-box">
+        <button onclick="drawRotate()">旋转</button>
+        <button onclick="drawScale()">缩放</button>
+        <button onclick="translateOrigin()">移动画布原点</button>
+        <button onclick="transformOverlay()">叠加变换</button>
+        <button onclick="transformScale()">叠加缩放</button>
+        <button onclick="transformSlope()">垂直倾斜角度</button>
+      </div>
+    </div>
+
+    <div class="button-group-wrap">
+      <div class="button-group-title">图形样式</div>
+      <div class="button-group-box">
+        <button onclick="drawGradientLinear()">线性渐变</button>
+        <button onclick="drawGradientRadial()">放射性渐变</button>
+        <button onclick="drawPattern()">重复图案</button>
+        <button onclick="drawImage()">绘制图像</button>
+        <button onclick="drawAlpha()">设置透明度</button>
+        <button onclick="drawShadow()">阴影</button>
+      </div>
+    </div>
+
+    <div class="button-group-wrap">
+      <div class="button-group-title">绘制图像</div>
+      <div class="button-group-box">
+        <button onclick="drawImage()">绘制图像</button>
+        <button onclick="toBase64()">把当前画布图像转为Base64格式</button>
+        <button onclick="downloadImg()">下载canvas图像到本地</button>
+      </div>
+    </div>
+
+    <div class="button-group-wrap">
+      <div class="button-group-title">像素控制</div>
+      <div class="button-group-box">
+        <button onclick="controlPixel()">像素控制</button>
+      </div>
+    </div>
+
+    <div class="button-group-wrap">
+      <div class="button-group-title">状态</div>
+      <div class="button-group-box">
+        <button onclick="saveRestore()">状态的保存与恢复</button>
+        <button onclick="getCanvas()">上下文中的canvas对象</button>
+      </div>
+    </div>
+
+    <script src="./demo2.js"></script>
+  </body>
+</html>

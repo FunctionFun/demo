@@ -1,0 +1,125 @@
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-wrap {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.edit-box {
+    width: 600px;
+    height: 500px;
+    background: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.ctr-layout,
+.aide-layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.edit-tool {
+    width: 100%;
+    height: 100px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit-upload {
+    display: none;
+}
+
+.edit-input {
+    width: 100px;
+}
+
+.edit-upload-btn {
+    position: absolute;
+    top: calc((600px - 100px) / 2);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.edit-upload-cancel {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background: #ffffff;
+    color: #666666;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+    border-radius: 50%;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.edit-upload-cancel:hover {
+    background: #de5585;
+    color: #ffffff;
+}
+
+.import-btn {
+    display: none;
+}
+
+.edit-range {
+    display: none;
+    position: absolute;
+    right: 10px;
+    bottom: 110px;
+    background: rgba(0, 0, 0, 0.48);
+    color: #ffffff;
+    opacity: 0.38;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.edit-range:hover {
+    opacity: 1;
+}
+
+.edit-range label {
+    display: flex;
+}
+
+.edit-range label+label {
+    margin-top: 10px;
+}
+
+.edit-range label span {
+    width: 25px;
+    cursor: pointer;
+}
+
+.edit-range label span:hover {
+    color: #de5585;
+}
+
+#editFilter {
+    display: none;
+}

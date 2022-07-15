@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parent</title>
+    <style>
+      body,
+      html {
+        padding: 0;
+        margin: 0;
+      }
+      .header-wrap {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        background-color: darkcyan;
+        color: #ffffff;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        box-sizing: border-box;
+      }
+      .header-btn {
+        font-size: 12px;
+        cursor: pointer;
+      }
+      #subPage {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: calc(100vh - 40px);
+        background-color: #f9f9f9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header-wrap">
+      <span>父页面标题</span>
+      <span class="header-btn" onclick="getChildrenFun()">保存</span>
+    </div>
+    <iframe id="subPage" src="./children.html" frameborder="0"></iframe>
+    <script>
+      function isParent() {
+        console.log('这里是父页面')
+      }
+      function getChildrenFun() {
+        console.log('调子页面方法')
+        const subPageFun = document.querySelector('#subPage').contentWindow
+        // 调方法
+        subPageFun.isChildren()
+        // 取样式
+        const subPageDoc = document.querySelector('#subPage').contentDocument
+        console.log('子页面样式获取--子页面高度', subPageDoc.body.clientHeight)
+        console.log('子页面样式获取--子页面指定元素高度', subPageDoc.querySelector('.abc-box').clientHeight)
+      }
+    </script>
+  </body>
+</html>

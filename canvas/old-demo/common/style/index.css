@@ -1,0 +1,38 @@
+body {
+  background: #f9f9f9;
+  color: #333333;
+  text-align: center;
+  margin: 0;
+  padding: 40px;
+}
+
+dl {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+dl + dl {
+  padding-top: 40px;
+  border-top: 1px solid #dfdfdf;
+}
+
+dl dt {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+dl dd {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+
+a {
+  color: #23bed5;
+}
+
+a:hover {
+  color: #de5585;
+}

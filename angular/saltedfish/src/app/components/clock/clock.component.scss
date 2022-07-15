@@ -1,0 +1,35 @@
+.clock-wrap {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-top: 0;
+  --color: #333333;
+}
+.clock-content {
+  display: flex;
+}
+
+.clock-left {
+  margin-right: var(--layout-spacing);
+}
+
+.time {
+  font-size: 9vw;
+  line-height: 1;
+}
+
+.clock-weather {
+  width: 100%;
+  font-size: var(--font-24);
+}
+
+.clock-date {
+  width: 100%;
+  font-size: var(--font-24);
+}
+
+.clock-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  text-align: right;
+}

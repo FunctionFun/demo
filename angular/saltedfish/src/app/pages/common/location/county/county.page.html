@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot='start'>
+      <ion-back-button text="" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>选择区县</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="select-city-wrap">
+    <ion-item *ngFor="let county of countyList" (click)="chooseItem(county)">
+      <ion-label>
+        {{ county.name }}
+      </ion-label>
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+    </ion-item>
+  </div>
+</ion-content>

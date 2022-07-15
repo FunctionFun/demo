@@ -1,0 +1,17 @@
+<ion-card class="todo-wrap">
+  <ion-card-header class="todo-title" (click)="goTodo()">
+    <ion-card-subtitle>
+      今日待办
+    </ion-card-subtitle>
+    <ion-card-title>To Do</ion-card-title>
+    <ion-icon class="todo-add" (click)="addTodo($event)" name="add-outline"></ion-icon>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-item class="todo-item" *ngFor="let item of todo">
+      <ion-label>{{item.content}}</ion-label>
+      <ion-checkbox slot="end" [(ngModel)]="item.status"></ion-checkbox>
+    </ion-item>
+    <span *ngIf="todo.length === 0">暂无计划</span>
+  </ion-card-content>
+</ion-card>

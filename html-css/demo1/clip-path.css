@@ -1,0 +1,97 @@
+.clip-path .arrow-up {
+  width: 20px;
+  height: 10px;
+  background: tomato;
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+
+.clip-path .arrow-down {
+  width: 20px;
+  height: 10px;
+  background: seagreen;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.clip-path .arrow-left {
+  width: 10px;
+  height: 20px;
+  background: palevioletred;
+  clip-path: polygon(100% 0, 100% 100%, 0 50%);
+}
+
+.clip-path .arrow-right {
+  width: 10px;
+  height: 20px;
+  background: goldenrod;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.clip-path .arrow-triangle {
+  width: 20px;
+  height: 20px;
+  background: teal;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.clip-path .arrow-triangle2 {
+  width: 20px;
+  height: 20px;
+  background: teal;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.clip-path .arrow-triangle3 {
+  width: 20px;
+  height: 20px;
+  background: teal;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.clip-path .arrow-triangle4 {
+  width: 20px;
+  height: 20px;
+  background: teal;
+  clip-path: polygon(100% 100%, 0 100%, 0 0);
+}
+
+.clip-path .rectangle {
+  width: 20px;
+  height: 20px;
+  background: tomato;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.clip-path .circle {
+  width: 20px;
+  height: 20px;
+  background: tomato;
+  clip-path: circle(10px);
+}
+
+.clip-path .sector {
+  width: 20px;
+  height: 20px;
+  background: tomato;
+  clip-path: inset(0 0 0 0 round 100% 0 0 0);
+}
+
+.clip-path .sector2 {
+  width: 20px;
+  height: 20px;
+  background: tomato;
+  clip-path: circle(20px at 100% 100%);
+}
+
+.clip-path .ellipse {
+  width: 40px;
+  height: 20px;
+  background: tomato;
+  clip-path: ellipse(20px 10px);
+}
+
+.clip-path .parallelogram {
+  width: 40px;
+  height: 20px;
+  background: tomato;
+  clip-path: polygon(20% 0, 100% 0, 80% 100%, 0 100%);
+}

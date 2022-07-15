@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>扫描结果</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div class="scan-result-wrap">
+  {{ content }}
+
+  <ion-button *ngIf="isUrl" class="scan-result-btn" (click)="openUrl()">打开链接</ion-button>
+</div>
+</ion-content>

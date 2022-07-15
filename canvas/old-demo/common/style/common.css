@@ -1,0 +1,61 @@
+.btn {
+    padding: 0 20px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-primary {
+    background: #23bed5;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #23d5ae;
+}
+
+.btn-default {
+    background: #ffffff;
+    color: #666666;
+}
+
+.btn-default:hover {
+    background: #f9f9f9;
+}
+
+.select {
+    height: 36px;
+    border: 1px solid #efefef;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.inp {
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #efefef;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.checkbox {
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+}
+
+.checkbox-choose {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    border: 1px solid #efefef;
+    background: #ffffff;
+}
+
+.mr10 {
+    margin-right: 10px;
+}

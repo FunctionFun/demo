@@ -1,0 +1,51 @@
+ion-toolbar:last-child {
+  --border-width: 0;
+}
+
+ion-back-button {
+  --color: #ffffff;
+}
+
+ion-content {
+  --background: #333333;
+  --padding-top: 0;
+}
+
+.flashlight-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flashlight-box {
+  width: 60vw;
+  height: 60vw;
+  border-radius: 50%;
+  background: rgba($color: #ffffff, $alpha: 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-48);
+  font-weight: 600;
+  color: #999999;
+  box-shadow: 0 0 12px rgba($color: #ffffff, $alpha: 0.1);
+  transition: 0.2s ease-in-out;
+}
+
+.is-light {
+  width: 30vw;
+  height: 30vw;
+  background: #fffddb;
+  color: #ccc769;
+  position: relative;
+  &::before {
+    position: absolute;
+    top: -5vw;
+    left: -5vw;
+    width: 40vw;
+    height: 40vw;
+    border: 2px solid #fffddb;
+  }
+}

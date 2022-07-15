@@ -1,0 +1,15 @@
+<div class="item-wrap">
+  <div class="item-box">
+    <div class="item-start">
+      <ng-content select="[slot=start]"></ng-content>
+      <ion-icon *ngIf="icon" [name]="icon"></ion-icon>
+    </div>
+    <div class="item-content">
+      <ng-content select="*"></ng-content>
+    </div>
+    <div class="item-end">
+      <ng-content select="[slot=end]"></ng-content>
+      <ion-icon [name]="arrow" *ngIf="arrow"></ion-icon>
+    </div>
+  </div>
+</div>

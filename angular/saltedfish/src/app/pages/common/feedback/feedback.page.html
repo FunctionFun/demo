@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot='start'>
+      <ion-back-button text="" defaultHref="/set"></ion-back-button>
+    </ion-buttons>
+    <ion-title>问题反馈</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="feedback-wrap">
+    <so-item>反馈类型</so-item>
+    <so-input></so-input>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="submit-btn" (click)="submit()">
+      提交
+    </div>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,9 @@
+.hsl-circle-wrap {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  /* 这里开始和结束用同一个颜色，否则头尾的颜色衔接会不自然 */
+  background: conic-gradient(red, orange, yellow, green, teal, blue, purple, red);
+}

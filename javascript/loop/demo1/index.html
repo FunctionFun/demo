@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demo1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-clip: padding-box;
+      }
+      button {
+        padding: 4px 10px;
+        border: none;
+        background: #eeeeee;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        outline: none;
+      }
+      button:hover {
+        background: #e2e2e2;
+      }
+      .button-group-title {
+        margin-bottom: 10px;
+      }
+      .button-group-box {
+        margin-bottom: 20px;
+      }
+      h2 {
+        margin-bottom: 40px;
+      }
+      .content {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+
+      <h2>迭代器</h2>
+
+      <div class="button-group-wrap">
+        <div class="button-group-title">for</div>
+        <div class="button-group-box">
+          <button onClick="doFor()">数组</button>
+          <button onClick="doFor2()">对象</button>
+          <button onClick="doFor3()">字符串</button>
+        </div>
+      </div>
+
+      <div class="button-group-wrap">
+        <div class="button-group-title">for in</div>
+        <div class="button-group-box">
+          <button onClick="doForIn()">数组</button>
+          <button onClick="doForIn2()">对象</button>
+          <button onClick="doForIn3()">字符串</button>
+          <button onClick="doForIn4()">类</button>
+        </div>
+      </div>
+
+      <div class="button-group-wrap">
+        <div class="button-group-title">for of</div>
+        <div class="button-group-box">
+          <button onClick="doForOf()">数组</button>
+          <button onClick="doForOf2()">对象</button>
+          <button onClick="doForOf3()">字符串</button>
+          <button onClick="doForOf4()">类</button>
+          <button onClick="doForOf5()"> DOM元素集合</button>
+          <button onClick="doForOf6()">停止迭代</button>
+          <button onClick="doForOf7()">生成器重复迭代</button>
+        </div>
+      </div>
+
+      <div class="button-group-wrap">
+        <div class="button-group-title">do...while</div>
+        <div class="button-group-box">
+          <button onClick="doDoWhile()">数组</button>
+          <button onClick="doDoWhile2()">对象</button>
+          <button onClick="doDoWhile3()">字符串</button>
+          <button onClick="doDoWhile4()">死循环</button>
+        </div>
+      </div>
+
+      <div class="button-group-wrap">
+        <div class="button-group-title">switch</div>
+        <div class="button-group-box">
+          <button onClick="doSwitch()">单一值判断</button>
+          <button onClick="doSwitch2()">多值判断</button>
+        </div>
+      </div>
+
+      <div class="button-group-wrap">
+        <div class="button-group-title">Array</div>
+        <div class="button-group-box">
+          <button onClick="doEvery()">every</button>
+          <button onClick="doSome()">some</button>
+          <button onClick="doFill()">fill</button>
+          <button onClick="doFilter()">filter</button>
+          <button onClick="doFind()">find</button>
+          <button onClick="doFindIndex()">findIndex</button>
+          <button onClick="doFlatMap()">flatMap</button>
+          <button onClick="doForEach()">forEach</button>
+        </div>
+      </div>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

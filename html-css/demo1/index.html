@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>纯css绘制图形</title>
+    <link rel="stylesheet" href="../common/reset.css" />
+    <link rel="stylesheet" href="border.css" />
+    <link rel="stylesheet" href="clip-path.css" />
+    <style>
+      body {
+        padding: 20px;
+      }
+      section {
+        margin-bottom: 40px;
+      }
+      h2 {
+        position: sticky;
+        top: 20px;
+        left: 20px;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      .draw-item {
+        margin-bottom: 10px;
+      }
+      .flex {
+        display: flex;
+        justify-content: space-between;
+      }
+      .flex-item {
+        padding: 20px;
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="flex-item border">
+        <h2>border</h2>
+        <section>
+          <h3>绘制三角形</h3>
+          <div class="draw-wrap">
+            <div class="draw-item arrow-up">
+              <!--向上的三角-->
+            </div>
+            <div class="draw-item arrow-down">
+              <!--向下的三角-->
+            </div>
+            <div class="draw-item arrow-left">
+              <!--向左的三角-->
+            </div>
+            <div class="draw-item arrow-right">
+              <!--向右的三角-->
+            </div>
+            <div class="draw-item arrow-triangle">
+              <!--直角三角-->
+            </div>
+            <div class="draw-item arrow-triangle2">
+              <!--直角三角-->
+            </div>
+            <div class="draw-item arrow-triangle3">
+              <!--直角三角-->
+            </div>
+            <div class="draw-item arrow-triangle4">
+              <!--直角三角-->
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3>绘制矩形</h3>
+          <div class="draw-wrap">
+            <div class="rectangle"></div>
+          </div>
+        </section>
+        <section>
+          <h3>平行四边形</h3>
+          <div class="draw-wrap">
+            <div class="parallelogram"></div>
+          </div>
+        </section>
+        <section>
+          <h3>绘制圆形</h3>
+          <div class="draw-wrap">
+            <div class="circle"></div>
+          </div>
+        </section>
+        <section>
+          <h3>绘制扇形</h3>
+          <div class="draw-wrap">
+            <div class="sector"></div>
+          </div>
+        </section>
+        <section>
+          <h3>绘制椭圆</h3>
+          <div class="draw-wrap">
+            <div class="ellipse"></div>
+          </div>
+        </section>
+      </div>
+
+      <div class="flex-item clip-path">
+        <h2>clip-path</h2>
+        <section>
+          <h3>绘制三角形</h3>
+          <div class="draw-wrap">
+            <div class="draw-item arrow-up">
+              <!--向上的三角-->
+            </div>
+            <div class="draw-item arrow-down">
+              <!--向下的三角-->
+            </div>
+            <div class="draw-item arrow-left">
+              <!--向左的三角-->
+            </div>
+            <div class="draw-item arrow-right">
+              <!--向右的三角-->
+            </div>
+            <div class="draw-item arrow-triangle">
+              <!--直角三角-->
+            </div>
+            <div class="draw-item arrow-triangle2">
+              <!--直角三角-->
+            </div>
+            <div class="draw-item arrow-triangle3">
+              <!--直角三角-->
+            </div>
+            <div class="draw-item arrow-triangle4">
+              <!--直角三角-->
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3>绘制矩形</h3>
+          <div class="draw-wrap">
+            <div class="rectangle"></div>
+          </div>
+        </section>
+        <section>
+          <h3>平行四边形</h3>
+          <div class="draw-wrap">
+            <div class="parallelogram"></div>
+          </div>
+        </section>
+        <section>
+          <h3>绘制圆形</h3>
+          <div class="draw-wrap">
+            <div class="circle"></div>
+          </div>
+        </section>
+        <section>
+          <h3>绘制扇形</h3>
+          <div class="draw-wrap flex">
+            <div class="sector"></div>
+            <div class="sector2"></div>
+          </div>
+        </section>
+        <section>
+          <h3>绘制椭圆</h3>
+          <div class="draw-wrap">
+            <div class="ellipse"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

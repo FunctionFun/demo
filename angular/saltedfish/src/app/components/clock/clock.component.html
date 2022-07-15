@@ -1,0 +1,14 @@
+<ion-card class="clock-wrap">
+  <ion-card-content class="clock-content">
+    <div class="clock-left">
+      <div class="time">{{ time }}</div>
+    </div>
+    <div class="clock-right">
+      <div class="clock-weather" (click)="toggleCity()">
+        <span>{{ location }} · </span>
+        <span>{{ temperature }}℃</span>
+      </div>
+      <div class="clock-date">{{ date }}</div>
+    </div>
+  </ion-card-content>
+</ion-card>

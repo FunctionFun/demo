@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>用flex实现粘连布局</title>
+  <link rel="stylesheet" href="../common/reset.css" />
+  <style>
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .header-wrap {
+      width: 100%;
+      background-color: rebeccapurple;
+      color: #fff;
+      padding: 20px;
+    }
+    .main {
+      background-color: rosybrown;
+      flex: 1;
+    }
+    .footer-wrap {
+      width: 100%;
+      padding: 20px;
+      background-color: gray;
+    }
+  </style>
+</head>
+<body>
+  <header class="header-wrap">导航-高度不用固定了</header>
+  <div class="main">
+    <div>中间内容</div>
+    <div>sticky-用flex实现</div>
+    <div>中间内容</div>
+  </div>
+  <footer class="footer-wrap">底部版权信息-高度不用固定了</footer>
+</body>
+</html>

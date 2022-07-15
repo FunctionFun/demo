@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>clip-path 动画</title>
+    <link rel="stylesheet" href="../common/reset.css" />
+    <link rel="stylesheet" href="clip-path-animation.css" />
+    <style>
+      body {
+        padding: 20px;
+      }
+      section {
+        margin-bottom: 40px;
+      }
+      h2 {
+        position: sticky;
+        top: 20px;
+        left: 20px;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .hover-list {
+        display: flex;
+        list-style: none;
+      }
+      .hover-item {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        background: tomato;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>悬停效果</h2>
+      <div class="draw-wrap">
+        <ul class="hover-list">
+          <li class="hover-item animation1">1</li>
+          <li class="hover-item animation2">2</li>
+          <li class="hover-item animation3">3</li>
+          <li class="hover-item animation4"><span>4</span></li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demo8</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-clip: padding-box;
+      }
+      body {
+        padding: 20px;
+      }
+      .canvas-wrap {
+        position: sticky;
+        top: 20px;
+        left: 20px;
+        margin-bottom: 20px;
+      }
+      .canvas-wrap canvas {
+        background: #f9f9f9;
+      }
+      button {
+        padding: 4px 10px;
+        border: none;
+        background: #eeeeee;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        outline: none;
+      }
+      button:hover {
+        background: #e2e2e2;
+      }
+      .button-group-title {
+        margin-bottom: 10px;
+      }
+      .button-group-box {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="canvas-wrap">
+      <canvas id="canvas" width="500px" height="500px"></canvas>
+    </div>
+
+    <script src="../common/ball.js"></script>
+    <script src="./demo8.js"></script>
+  </body>
+</html>

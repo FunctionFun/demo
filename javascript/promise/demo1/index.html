@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>demo1</title>
+  <style>
+    button {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <button onClick="doSth()">普通的回调函数</button>
+
+  <button onClick="doSth1()">执行结果1</button>
+
+  <button onClick="doSth1Same()">执行结果1 same</button>
+
+  <button onClick="doSth1SameError()">执行结果1 error</button>
+
+  <button onClick="doSth2()">执行结果2</button>
+
+  <button onClick="doCall()">链式调用</button>
+
+  <button onClick="doAgain()">多层promise</button>
+
+  <button onClick="doAgain2()">多层promise2</button>
+
+  <button onClick="doAgain3()">多层promise3</button>
+
+  <button onClick="doCatch()">捕获catch中的错误</button>
+
+  <script src="./demo1.js"></script>
+</body>
+</html>

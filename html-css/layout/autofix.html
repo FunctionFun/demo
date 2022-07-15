@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>响应式布局</title>
+    <link rel="stylesheet" href="../common/reset.css" />
+    <style>
+      html {
+        font-size: 16px;
+      }
+      .page-wrap {
+        min-height: 100vh;
+        background-color: palegoldenrod;
+      }
+      /* 默认情况下（1920px宽度）一行4列 */
+      .list-item {
+        box-sizing: border-box;
+        float: left;
+        width: 25%;
+        height: 200px;
+        background-color: salmon;
+        border: 3px solid darkcyan;
+        color: #fff;
+        font-size: 2rem;
+        padding: 10px;
+      }
+      /* 网页宽度小于 758px 时，一行2列 */
+      @media screen and (max-width: 768px) {
+        html {
+          font-size: 10px;
+        }
+        .list-item {
+          width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-wrap">
+      <div class="list-item">1</div>
+      <div class="list-item">2</div>
+      <div class="list-item">3</div>
+      <div class="list-item">4</div>
+    </div>
+  </body>
+</html>
